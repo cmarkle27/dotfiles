@@ -1,2 +1,2 @@
 # additional paths
-#PATH=/Applications/MAMP/bin/php/php5.3.6/bin:/Applications/MAMP/Library/bin:$PATH
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
