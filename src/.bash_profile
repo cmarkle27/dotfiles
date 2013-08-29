@@ -22,3 +22,6 @@ complete -W "NSGlobalDomain" defaults
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+
+# Ant config options
+export ANT_OPTS="-Xss8m -XX:MaxPermSize=128m"
