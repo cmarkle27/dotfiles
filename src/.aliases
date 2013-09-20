@@ -26,3 +26,8 @@ alias hideall="defaults write com.apple.Finder AppleShowAllFiles -bool false && 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+#CNN shortcuts
+alias cdbps="cd ~/Projects/CNN/bps-build"
+alias cdms2="cd ~/Projects/CNN/bps-build/mediasource/webapp"
+alias cdntr="cd ~/Projects/CNN/bps-build/newstron/client"
