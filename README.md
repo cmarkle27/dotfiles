@@ -1,5 +1,5 @@
 # Dotfiles 
-These are my dotfiles. Inspired by https://github.com/gf3/dotfiles. Feel free to clone / fork. This is a work in progress. Let me know if you find any issues, or have any other cool options / sripts to add.
+These are my dotfiles. Inspired by http://dotfiles.github.io/. Feel free to clone / fork. This is a work in progress. Let me know if you find any issues, or have any other cool options / sripts to add.
 
 ## Warning 
 Please read the scripts before using as they may contain things you don't want. Specifically, the osx_defaults.sh script will change you machine name, etc to markle976 - you probably don't want that! So, edit the files first. Also, beware that the dotfiles in src will be copied to your home directory and could potentially overwrite any setting you have there.
