@@ -23,5 +23,8 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 
+#keep tarballs clean
+export COPYFILE_DISABLE=true
+
 # Ant config options
 export ANT_OPTS="-Xss8m -XX:MaxPermSize=128m"
