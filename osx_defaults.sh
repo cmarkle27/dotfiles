@@ -6,21 +6,26 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-###############################################################################
-# General UI/UX                                                               #
-###############################################################################
+# Ask for Names
+echo "ComputerName: "
+read cName
+echo "LocalHostName"
+read lName
+echo "HostName"
+read hName
 
+echo "Set Computer Name, Local Host Name and Host Name"
+sudo scutil --set ComputerName $cName
+sudo scutil --set LocalHostName $lName
+sudo scutil --set HostName $hName
 
 # Set-Up OSX
 echo "Update Software"
 sudo softwareupdate --download --all --install
 
-echo "Set Computer Name, Local Host Name and Host Name"
-sudo scutil --set ComputerName markle976
-sudo scutil --set LocalHostName markle976
-sudo scutil --set HostName markle976
-
-
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
