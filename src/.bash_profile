@@ -28,3 +28,8 @@ export COPYFILE_DISABLE=true
 
 # Ant config options
 export ANT_OPTS="-Xss8m -XX:MaxPermSize=128m"
+
+# to make things work uncomment accordingly
+#export CC=/usr/local/bin/gcc-4.9
+#export CPP=/usr/local/bin/cpp-4.9
+#export CXX=/usr/local/bin/g++-4.9
