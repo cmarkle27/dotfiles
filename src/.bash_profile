@@ -24,8 +24,8 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 
 # Write to bash_history immediately
-shopt -s histappend
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+shopt -s histappend # append to history, don't overwrite it
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 #keep tarballs clean
 export COPYFILE_DISABLE=true
