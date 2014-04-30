@@ -23,11 +23,15 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 
+# Write to bash_history immediately
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+
 #keep tarballs clean
 export COPYFILE_DISABLE=true
 
 # Ant config options
-export ANT_OPTS="-Xss8m -XX:MaxPermSize=128m"
+#export ANT_OPTS="-Xss8m -XX:MaxPermSize=128m"
 
 # to make things work uncomment accordingly
 #export CC=/usr/local/bin/gcc-4.9
