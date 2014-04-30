@@ -73,8 +73,6 @@
 
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[mergetool]
-  prompt = false
 [merge]
   summary = true
   verbosity = 1
@@ -88,7 +86,7 @@
   default = tracking
 [core]
   autocrlf = false
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [advice]
   statusHints = false
 [diff]
@@ -99,6 +97,11 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
-
- [include]
-    path = ~/.gituser 
+[include]
+  path = ~/.gituser 
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true

@@ -2,4 +2,4 @@
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 ### Added by the Heroku Toolbelt
-PATH="/usr/local/heroku/bin:$PATH"
+#PATH="/usr/local/heroku/bin:$PATH"
