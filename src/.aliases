@@ -20,9 +20,14 @@ else
 fi
 
 # Show/hide hidden files in Finder
-alias showall="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias hideall="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+alias showall="defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder"
+alias hideall="defaults write com.apple.finder AppleShowAllFiles -boolean false && killall Finder"
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# shortcuts
+alias cdcnn="cd ~/Projects/CNN"
+alias cdntr="cd ~/Projects/CNN/newstron_client"
+alias cdchef="cd ~/chef"
